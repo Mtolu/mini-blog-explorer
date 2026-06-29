@@ -1,0 +1,124 @@
+:root {
+  --primary-color1: blue;
+  --primary-color2: purple;
+  --secondary-color: #10b981;
+  --danger-color: red;
+  --bg-color: #f3f4f6;
+  --card-bg: #f3e7e7;
+  --text-main: #0B132B;
+  --text-muted: #2F3E46;
+}
+.app { 
+  min-height: 100vh; 
+  padding: 32px; 
+  background: #f4f6f8; 
+}
+
+.app-container { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+} 
+
+.header {
+  text-align: center;
+  background-color: #1062b4;  
+  color: var(--text-main);
+  margin-bottom: 40px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+.loading-status {
+  text-align: center; 
+  color: var(--primary-color2) ;
+  margin-bottom: 40px;  
+}
+.error-status {
+  text-align: center; 
+  color: var(--danger-color) ;
+  margin-bottom: 40px;  
+}
+.empty-posts{
+  text-align: center; 
+  color: var(--danger-color) ;
+  margin-bottom: 40px;  
+}
+
+.btn-retry-error { 
+  border: 1px solid #d1d5db; 
+  background: var(--secondary-color); 
+  border-radius: 5px; 
+  padding:  4px; 
+  margin-left: 10px;
+}
+
+.filter-grid-controls { 
+  display: flex;
+  background-color: antiquewhite;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px; 
+  gap: 16px; 
+  margin-bottom: 28px; 
+} 
+.controls { 
+  display: flex;
+  background-color: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 10px; 
+  gap: 16px; 
+  margin-top: 5px; 
+  margin-bottom: 28px; 
+} 
+
+.search-input, .user-filter  {    
+  border: 1px solid #d1d5db; 
+  border-radius: 10px; 
+  padding:  14px; 
+}
+
+.btn-refresh { 
+  border: 1px solid #d1d5db; 
+  background: #ffffff; 
+  border-radius: 10px; 
+  padding:  14px; 
+}
+
+.post-grid { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  margin-bottom: 20px; 
+  gap: 18px; 
+} 
+
+.post-card { 
+  background: white; 
+  border-radius: 16px; 
+  padding: 20px; 
+  border: 1px solid #e5e7eb; 
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06); 
+} 
+.post-card span{ 
+  background: white;   
+  border-radius: 5px;  
+  margin-left: 0px; 
+  margin-right: 12px; 
+  padding: 5px; 
+  border: 1px solid #e5e7eb; 
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06); 
+} 
+
+@media (max-width: 900px) { 
+  .post-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  } } 
+  
+@media (max-width: 600px) { 
+  
+  .controls { 
+    flex-direction: column; 
+  } 
+  .post-grid { 
+    grid-template-columns: 1fr; 
+  } 
+}
