@@ -27,6 +27,43 @@
   border: 1px solid #e5e7eb;
   border-radius: 10px;
 }
+
+
+
+.marquee-container {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  width: 100%;
+  background: var(--primary-color1); 
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  min-width: 200%; 
+  gap: 40px; /* Space between your items */
+  animation: marquee 25s linear infinite;
+  font-weight: bold;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+
 .loading-status {
   text-align: center; 
   color: var(--primary-color2) ;
