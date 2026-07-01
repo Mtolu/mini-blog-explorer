@@ -45,7 +45,7 @@
   white-space: nowrap;
   justify-content: space-between;
   min-width: 200%; 
-  gap: 40px; /* Space between your items */
+  gap: 40px; 
   animation: marquee 25s linear infinite;
   font-weight: bold;
 }
